@@ -1,0 +1,9 @@
+.bg-custom{
+    background-color: rgba(255, 255, 255, 0.932);
+}
+.shadow-lgg {
+    box-shadow: 0 0.1rem 2rem rgba(255, 255, 255, 0.959)!important;
+}
+.hg-card{
+    height: 40rem;
+}
