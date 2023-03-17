@@ -20,21 +20,25 @@
         <div class="card-body">
             <h5 class="card-title text-dark">Weather Information...</h5>
             <div class="d-flex">
-
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">!</span>
+                    <input type="text" class="form-control" placeholder="City Name..." aria-label="City Name..."
+                        aria-describedby="basic-addon1" id="searchTextField" onkeydown="getPlaceName()">
+                </div>
 
                 <div class="input-group mb-3" style="margin-left: 10px; margin-right: 10px;">
                     <span class="input-group-text" id="basic-addon1">Co<sup>o</sup></span>
                     <input type="text" class="form-control" placeholder="Latitude..." aria-label="Latitude..."
-                        aria-describedby="basic-addon1" id="Lat">
+                        aria-describedby="basic-addon1" id="Lat" readonly>
                 </div>
 
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1">Co<sup>o</sup></span>
                     <input type="text" class="form-control" placeholder="Longitude..." aria-label="Longitude..."
-                        aria-describedby="basic-addon1" id="Lng">
+                        aria-describedby="basic-addon1" id="Lng" readonly>
                 </div>
                 <div class="" style="margin-left: 10px; width: 55%;">
-                    <button type="button" class="btn btn-outline-dark" onclick="load()">Weather Details</button>
+                    <button type="button" class="btn btn-outline-dark" onclick="findDetailsOfWeather()">Weather Details</button>
                 </div>
             </div>
             <div class="pt-5 pb-5">
@@ -57,8 +61,8 @@
 <script src="./index.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script>
 
 
 </html>
